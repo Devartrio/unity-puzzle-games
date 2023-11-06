@@ -93,7 +93,7 @@ namespace SlidingPuzzle
 
             if(tiles.Count == puzzleSize.x * puzzleSize.y - 1)
             {
-                Debug.Log("Game Clear");
+                Debug.Log($"Game Clear\nPlaytime = {Playtime}\nMoveCount = {MoveCount}");
                 StopCoroutine(playTimeCoroutine);
             }
         }
